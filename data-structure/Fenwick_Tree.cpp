@@ -17,7 +17,7 @@ struct BitSeg{
     }
     
     ll query(int idx){
-        int ret=0;
+        ll ret=0;
         while(idx){
             ret+=fwt[idx];
             idx-=idx&-idx;
